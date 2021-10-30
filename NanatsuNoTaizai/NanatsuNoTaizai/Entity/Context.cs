@@ -2,8 +2,8 @@
 
 namespace NanatsuNoTaizai.Entity
 {
-    public class Context
+    public class Context : DbContext
     {
-        public DbSet<CharacterEntity> characterEntities { get; set; }
+        public DbSet<DT_Character> DT_Characters { get; set; }
     }
 }

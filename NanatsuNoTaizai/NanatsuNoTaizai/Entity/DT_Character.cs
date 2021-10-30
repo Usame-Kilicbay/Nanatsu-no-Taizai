@@ -7,10 +7,9 @@ namespace NanatsuNoTaizai.Entity
     {
         [Key]
         public byte CharacterID { get; set; }
-
         [StringLength(50)]
         public string CharacterName { get; set; }
-        
         public short CharacterAge { get; set; }
+        public DT_Abilities Ability { get; set; }
     }
 }

@@ -11,8 +11,8 @@ namespace NanatsuNoTaizai.Entity
     {
         [Key]
         public byte AbilityID { get; set; }
-
         [StringLength(50)]
         public string AbilityName { get; set; }
+        public ICollection<DT_Character> Characters { get; set; }
     }
 }
